@@ -1,0 +1,45 @@
+body {
+  font-family: Roboto, Verdana, Tahoma, sans-serif;
+  color: var(--font-lead-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body button {
+  cursor: pointer;
+}
+
+body img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.no-style-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

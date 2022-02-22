@@ -1,0 +1,107 @@
+.page-header {
+  font-weight: 500;
+  color: $font-lead-color;
+  border-bottom: 1px solid $header-border-color;
+}
+
+.logo {
+  margin-right: 93px;
+  font-family: Raleway, Tahoma, sans-serif;
+  font-size: 26px;
+  text-decoration: none;
+  color: $font-lead-color;
+  line-height: 1.19;
+
+  &--blue-accent {
+  color: $additional-and-hover-color;
+  }
+}
+
+
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation__link {
+  display: block;
+  padding: 32px 0;
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition: color $transition;
+
+  &.is-active {
+      color: $additional-and-hover-color;
+  }
+
+  &.is-active::after {
+    position: absolute;
+  bottom: -1px;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $additional-and-hover-color;
+  border-radius: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $additional-and-hover-color;
+  }
+}
+
+
+.contacts {
+  margin-left: auto;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icon-contacts {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill $transition;
+
+  .contacts__mail:hover &,
+  .basement-mail:focus & {
+    fill: $additional-and-hover-color;
+  }
+}
+
+
+.contacts__mail {
+  padding: 32px 0;
+  text-decoration: inherit;
+  color: $font-support-color;
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+      color: $additional-and-hover-color;
+  }
+}
+
+.contacts__tel {
+    padding: 32px 0;
+  text-decoration: inherit;
+  color: $font-support-color;
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+      color: $additional-and-hover-color;
+  }
+}
+
+
+.basement-phys-address:hover,
+.basement-phys-address:focus,
+.basement-mail:hover,
+.basement-mail:focus,
+.basement-tel:hover,
+.basement-tel:focus {
+  color: $additional-and-hover-color;
+}
