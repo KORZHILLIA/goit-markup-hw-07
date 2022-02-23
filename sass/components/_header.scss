@@ -5,18 +5,20 @@
 }
 
 .logo {
-  margin-right: 93px;
   font-family: Raleway, Tahoma, sans-serif;
   font-size: 26px;
   text-decoration: none;
-  color: $font-lead-color;
   line-height: 1.19;
-
-  &--blue-accent {
-  color: $additional-and-hover-color;
-  }
+  color: $font-lead-color;
 }
 
+.page-header__logo {
+  margin-right: 93px;
+}
+
+.logo__text--blue-accent {
+  color: $additional-and-hover-color;
+}
 
 .navigation__item:not(:last-child) {
   margin-right: 50px;
@@ -65,8 +67,7 @@
   fill: currentColor;
   transition: fill $transition;
 
-  .contacts__mail:hover &,
-  .basement-mail:focus & {
+  .contacts__mail:hover & {
     fill: $additional-and-hover-color;
   }
 }
@@ -85,23 +86,10 @@
 }
 
 .contacts__tel {
-    padding: 32px 0;
-  text-decoration: inherit;
-  color: $font-support-color;
-  transition: color $transition;
+    @extend .contacts__mail;
 
   &:hover,
   &:focus {
       color: $additional-and-hover-color;
   }
-}
-
-
-.basement-phys-address:hover,
-.basement-phys-address:focus,
-.basement-mail:hover,
-.basement-mail:focus,
-.basement-tel:hover,
-.basement-tel:focus {
-  color: $additional-and-hover-color;
 }

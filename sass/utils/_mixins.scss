@@ -1,0 +1,12 @@
+@mixin container($width, $p-vert, $p-horiz, $ml: auto, $mr: auto) {
+    width: $width;
+  padding: $p-vert $p-horiz;
+  margin-left: $ml;
+  margin-right: $mr;
+}
+
+@mixin list($margin, $padding, $list-style) {
+    margin: $margin;
+    padding: $padding;
+    list-style: $list-style;
+}

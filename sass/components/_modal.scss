@@ -65,7 +65,7 @@
   text-align: center;
 }
 
-.input--feedback {
+.form__input--large {
   height: 120px;
   padding: 12px 16px;
   resize: none;
@@ -110,6 +110,10 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $font-support-color;
+
+}
+
+.contract__link {
 
   &--blue-accent {
     color: $additional-and-hover-color;

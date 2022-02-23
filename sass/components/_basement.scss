@@ -10,8 +10,15 @@
   margin-bottom: 20px;
 }
 
-.logo--white-accent {
-  color: $white;
+.logo__text {
+  
+  &--blue-accent {
+    color: $additional-and-hover-color;
+  }
+
+  &--white-accent {
+    color: $white;
+  }
 }
 
 .address {
@@ -38,7 +45,7 @@
 .address__mail:focus,
 .address__tel:hover,
 .address__tel:focus {
-    color: $additional-and-hover-color;
+  color: $additional-and-hover-color;
 }
 
 .phys-address {
@@ -46,7 +53,7 @@
 
   &:hover,
   &:focus {
-      color: $additional-and-hover-color;
+    color: $additional-and-hover-color;
   }
 }
 
@@ -94,11 +101,11 @@
 
   &::placeholder {
     font-size: 16px;
-  line-height: 1.25;
-  color: $footer-font-color;
-  letter-spacing: 0.03em;
+    line-height: 1.25;
+    color: $footer-font-color;
+    letter-spacing: 0.03em;
   }
-
+  
 }
 
 .basement__btn {
